@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Form Example</title>
+  <link rel="stylesheet" href="enhanced_form.css">
+
+</head>
+<body>
+
+  <header>
+    <h1>Enhanced Registration Form</h1>
+    <p>Demonstration of semantic HTML5 structure with forms, lists, tables, and media</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Program Highlights</h2>
+      <ul>
+        <li>Learn modern web development</li>
+        <li>Hands-on projects and assignments</li>
+        <li>Accessible and responsive design</li>
+      </ul>
+      <img src="images/img2.jpg" alt="Coding Vibes" width="150" height="80">
+    </section>
+
+    <section>
+      <h2>Course Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Topic</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Introduction to HTML5</td>
+            <td>9:00 AM - 11:00 AM</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>CSS3 and Layouts</td>
+            <td>1:00 PM - 3:00 PM</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>JavaScript Essentials</td>
+            <td>10:00 AM - 12:00 PM</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>Project Work & Review</td>
+            <td>2:00 PM - 5:00 PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="+254712345678" pattern="^\+?\d{8,20}$" required>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+
+          <label for="userid">User ID:</label>
+          <input type="text" id="userid" name="userid" value="AUTO1234" readonly>
+        </fieldset>
+
+        <fieldset>
+          <legend>Course Preferences</legend>
+          <label for="course">Select Your Preferred Course:</label>
+          <select id="course" name="course" required>
+            <option value="">--Choose an option--</option>
+            <option value="frontend">Frontend Development</option>
+            <option value="backend">Backend Development</option>
+            <option value="fullstack">Full Stack Development</option>
+          </select>
+
+          <label>Preferred Study Mode:</label>
+          <label for="online">
+            <input type="radio" id="online" name="mode" value="online" required>Online
+          </label>
+
+          <label for="onsite">
+            <input type="radio" id="onsite" name="mode" value="onsite">On-site
+          </label>
+
+          <label for="skills">List Your Current Skills:</label>
+          <textarea id="skills" name="skills" rows="4" placeholder="e.g., HTML, CSS, JavaScript, Python"></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Setup</legend>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter strong password" required minlength="8">
+
+          <label for="confirm">Confirm Password:</label>
+          <input type="password" id="confirm" name="confirm" placeholder="Re-enter password" required minlength="8">
+
+          <label>
+            <input type="checkbox" name="terms" required> I agree to the terms and conditions
+          </label>
+        </fieldset>
+
+        <button type="submit" class="submit-btn">Submit Registration</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Enhanced Form Demo | Designed with semantic HTML5</p>
+  </footer>
+
+</body>
+</html>
